@@ -1,0 +1,7 @@
+SELECT title, author 
+FROM book
+WHERE (author LIKE "% С._." 
+    OR author LIKE "% _.С.")
+    AND (title NOT LIKE " " 
+    AND title LIKE "% %")
+ORDER BY title
